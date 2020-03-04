@@ -1,0 +1,20 @@
+header {
+    width: 1440px;
+    height: 70px;
+    box-shadow: inset 0 -1px 0 0 #cfd8dd;
+    background-color: #36414c;
+}
+
+.nav-icon {
+    width: 113px;
+    height: 44px;
+    float: left;
+}
+
+.navactive {
+    float: right;
+}
+
+.navactive a {
+    color: #ffffff;
+}

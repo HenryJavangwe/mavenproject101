@@ -1,0 +1,26 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="104" height="98" viewBox="0 0 104 98">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #aec7a7;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>icon-dev-console</title>
+  <g id="Group">
+    <g id="code-write-1">
+      <path id="Shape" class="cls-1" d="M46.43,84.74h-31A3.44,3.44,0,0,1,12,81.3V12.44A3.44,3.44,0,0,1,15.44,9H55.33a3.44,3.44,0,0,1,2.43,1L69.52,21.76a3.48,3.48,0,0,1,1,2.44V52"/>
+      <path id="Rectangle-path" class="cls-1" d="M22.83,29.66H35.6a.51.51,0,0,1,.5.49V42.93a.52.52,0,0,1-.5.5H22.83a.5.5,0,0,1-.5-.5V30.15a.49.49,0,0,1,.49-.49Z"/>
+      <path class="cls-1" d="M22.83,53.75H35.6a.52.52,0,0,1,.5.5V67a.51.51,0,0,1-.5.49H22.83a.49.49,0,0,1-.5-.48h0V54.25A.5.5,0,0,1,22.83,53.75Z"/>
+      <path class="cls-1" d="M36.1,36.54H43A3.45,3.45,0,0,1,46.43,40V57.2A3.46,3.46,0,0,1,43,60.64H36.1"/>
+      <path class="cls-1" d="M58.48,46.87H48.15"/>
+      <path class="cls-1" d="M66.07,84.74,54,88.18l3.44-12.05L82.07,51.52a1.73,1.73,0,0,1,2.44,0l6.17,6.17a1.74,1.74,0,0,1,.5,1.22,1.72,1.72,0,0,1-.5,1.22Z"/>
+      <path class="cls-1" d="M76.4,57.19,85,65.8"/>
+      <path class="cls-1" d="M57.46,76.13l8.61,8.61"/>
+    </g>
+  </g>
+</svg>

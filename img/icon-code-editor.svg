@@ -1,0 +1,30 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="104" height="98" viewBox="0 0 104 98">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #f8e71c;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>icon-code-editor</title>
+  <g id="Group">
+    <g id="browser-page-hierarchy">
+      <path id="Rectangle-path" class="cls-1" d="M11.35,11.92h81.3a2,2,0,0,1,2,2V84.08a2,2,0,0,1-2,2H11.35a2,2,0,0,1-2-2V13.92A2,2,0,0,1,11.35,11.92Z"/>
+      <path id="Shape" class="cls-1" d="M9.35,30.46h85.3"/>
+      <path class="cls-1" d="M22.33,20.26a.93.93,0,1,1,0,1.85.93.93,0,0,1,0-1.85"/>
+      <path class="cls-1" d="M33.46,20.26a.93.93,0,1,1-.93.93.93.93,0,0,1,.93-.93"/>
+      <path class="cls-1" d="M44.58,20.26a.93.93,0,1,1,0,1.85.93.93,0,0,1,0-1.85"/>
+      <path class="cls-1" d="M24.69,63.83H34.81a.5.5,0,0,1,.5.5V74.46a.5.5,0,0,1-.5.5H24.69a.5.5,0,0,1-.5-.5V64.33A.5.5,0,0,1,24.69,63.83Z"/>
+      <path id="Oval" class="cls-1" d="M52,52.71a5.57,5.57,0,1,0-5.56-5.56A5.56,5.56,0,0,0,52,52.71Z"/>
+      <path class="cls-1" d="M46.94,63.83H57.06a.5.5,0,0,1,.5.5V74.46a.5.5,0,0,1-.5.5H46.94a.5.5,0,0,1-.5-.5V64.33A.5.5,0,0,1,46.94,63.83Z"/>
+      <path class="cls-1" d="M69.19,63.83H79.31a.5.5,0,0,1,.5.5V74.46a.5.5,0,0,1-.5.5H69.19a.5.5,0,0,1-.5-.5V64.33A.5.5,0,0,1,69.19,63.83Z"/>
+      <path class="cls-1" d="M57.56,49H68.69a3.71,3.71,0,0,1,3.71,3.71V63.83"/>
+      <path class="cls-1" d="M46.44,49H35.31a3.71,3.71,0,0,0-3.71,3.71V63.83"/>
+      <path class="cls-1" d="M52,52.71V63.83"/>
+    </g>
+  </g>
+</svg>
