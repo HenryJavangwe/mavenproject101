@@ -61,5 +61,26 @@ body {
 
 main .sect {
     background-color: rgba(91, 157, 227, 0.08);
-    height: 3rem;
+    height: 6rem;
+}
+
+
+/* Footer Styles all begin here */
+
+footer .upperdiv {
+    display: flex;
+    height: 10rem;
+    background-color: #3e464b;
+    color: rgb(0, 146, 243);
+}
+
+footer .upperdiv div {
+    margin: auto;
+    text-transform: ;
+}
+
+.lowerdiv {
+    background-color: #1f262d;
+    color: #ffffff;
+    height: 6rem;
 }
