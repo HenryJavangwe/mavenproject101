@@ -1,9 +1,18 @@
+
+
+/* Header Styles */
+
 header {
-    width: 1440px;
+    /* width: 1440px; */
     height: 70px;
     box-shadow: inset 0 -1px 0 0 #cfd8dd;
     background-color: #36414c;
+    padding: 26px 24px 24px 24px;
 }
+
+/* nav a { 
+    text-decoration: none;
+}*/
 
 .nav-icon {
     width: 113px;
@@ -13,8 +22,44 @@ header {
 
 .navactive {
     float: right;
+    /* text-decoration: none; */
 }
 
 .navactive a {
+    height: 20px;
+    font-family: Titillium;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
     color: #ffffff;
+}
+
+nav a {
+    text-decoration: none;
+}
+nav a :hover {
+    background-color: red;
+    text-decoration: underline rgb(7, 135, 209) ;
+}
+
+
+
+.basket {
+    width: 26px;
+    height: 21px;
+    background-color: #ffffff;;
+}
+
+/* Main Sections styles starts here */
+
+body {
+    background-color: #ffffff;
+}
+
+main .sect {
+    background-color: rgba(91, 157, 227, 0.08);
+    height: 3rem;
 }
