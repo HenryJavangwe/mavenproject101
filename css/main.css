@@ -10,23 +10,11 @@ header {
     padding: 26px 24px 24px 24px;
 }
 
-/* nav a { 
-    text-decoration: none;
-}*/
-
-.nav-icon {
-    width: 113px;
-    height: 44px;
-    float: left;
-}
-
-.navactive {
+/* .navactive {
     float: right;
-    /* text-decoration: none; */
-}
+} */
 
-.navactive a {
-    height: 20px;
+.navbar-nav {
     font-family: Titillium;
     font-size: 12px;
     font-weight: 600;
@@ -34,39 +22,123 @@ header {
     font-style: normal;
     line-height: 1.67;
     letter-spacing: normal;
-    color: #ffffff;
+    color: white;
 }
-
-nav a {
-    text-decoration: none;
-}
-nav a :hover {
-    background-color: red;
-    text-decoration: underline rgb(7, 135, 209) ;
-}
-
 
 
 .basket {
-    width: 26px;
-    height: 21px;
-    background-color: #ffffff;;
-}
-
-/* Main Sections styles starts here */
-
-body {
+    width: 35px;
+    height: 35px;
     background-color: #ffffff;
+    padding: 5px;
+    border-radius: 50%;
 }
 
-main .sect {
-    background-color: rgba(91, 157, 227, 0.08);
-    height: 6rem;
+/* MAIN SECTION STYLES FROM HERE UNTIL NEXT COMMENT
+*/
+
+    body {
+    background-color: #ffffff;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+
+  /* FIRST SECTION STYLES - HERO IMAGE AND THE NEXT LEVEL TRAINING HEADING*/
+
+.Next-level-training {
+    font-family: Titillium;
+    font-size: 56px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--charcoal-grey);
+    padding: 60px;
+    
+  }
+
+  .text-style-1 {
+      margin: 0;
+  }
+
+  .Take-your-tech-caree {
+    /* width: 882px; */
+    height: 78px;
+    font-family: Titillium;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--charcoal-grey);
+  }
+  
+  .button-more {
+    width: 350px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px 0 rgba(25, 71, 128, 0.2);
+    background-color: #5b9de3;
+  }
+
+  .FIND-OUT-MORE {
+    /* width: 204px;
+    height: 19px; */
+    font-family: Titillium;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+  }
+
+
+  /* HERE IS WHERE THE SECOND SECTION STYLES ARE LAID OUT
+   */
+
+   #why-maven-academy {
+       padding: 60px 100px;
+   }
+   #side-bar-summary {
+        padding: 60px 80px;
+        border-radius: 5px;
+        box-shadow: 0 15px 30px 0 rgba(25, 71, 128, 0.2);
+        background-color: #ffffff;
+   }
+
+   .img-fill {
+    background-color: #4a90e2;
+    width: 75px;
+    height:75px ;
+    border-radius: 5px;
+    padding: 10px 0 10px 25px;
+  }
+
+/* THIRD SECTION STYLES - CAROUSEL STYLING */
+
+.carousel-control-prev,
+.carousel-control-next{
+      bottom: 1%;
+      width: 2%;
+      background-color: orange;
 }
 
 
 /* Footer Styles all begin here */
 
+
+footer {
+    clear: both;
+}
 footer .upperdiv {
     display: flex;
     height: 10rem;
@@ -76,11 +148,10 @@ footer .upperdiv {
 
 footer .upperdiv div {
     margin: auto;
-    text-transform: ;
 }
 
 .lowerdiv {
     background-color: #1f262d;
     color: #ffffff;
-    height: 6rem;
+    height: 10srem;
 }
