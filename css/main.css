@@ -10,9 +10,6 @@ header {
     padding: 26px 24px 24px 24px;
 }
 
-/* .navactive {
-    float: right;
-} */
 
 .navbar-nav {
     font-family: Titillium;
@@ -25,6 +22,27 @@ header {
     color: white;
 }
 
+.navigate {
+  text-decoration: none;
+}
+/* .navigate li a:hover {
+border-bottom: 4px solid #4a90e2;
+} */
+
+.navigate li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #4a90e2;
+  transition: width .3s;
+}
+.navigate li a:hover::after {
+  width: 100%;
+  margin-top: 5px;
+
+}
+
 
 .basket {
     width: 35px;
@@ -34,8 +52,7 @@ header {
     border-radius: 50%;
 }
 
-/* MAIN SECTION STYLES FROM HERE UNTIL NEXT COMMENT
-*/
+/* MAIN SECTION STYLES FROM HERE UNTIL NEXT COMMENT */
 
     body {
     background-color: #ffffff;
@@ -43,8 +60,19 @@ header {
     font-family: 'Titillium Web', sans-serif;
   }
 
+  section {
+    margin: 20px 0;
+    padding: 20px;
+  }
+
 
   /* FIRST SECTION STYLES - HERO IMAGE AND THE NEXT LEVEL TRAINING HEADING*/
+
+
+
+
+
+
 
 .Next-level-training {
     font-family: Titillium;
@@ -57,6 +85,8 @@ header {
     text-align: center;
     color: var(--charcoal-grey);
     padding: 60px;
+    background-color: rgba(91, 157, 227, 0.08);
+    margin-top: 0;
     
   }
 
@@ -83,7 +113,15 @@ header {
     height: 60px;
     border-radius: 30px;
     box-shadow: 0 10px 20px 0 rgba(25, 71, 128, 0.2);
-    background-color: #5b9de3;
+    background-color:  #4a90e2;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .button-more:hover {
+    background-color: #ffffff;
+    border: solid 2px #4a90e2;
+    color: #4a90e2;
   }
 
   .FIND-OUT-MORE {
@@ -97,7 +135,6 @@ header {
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
-    color: #ffffff;
     margin: 0;
   }
 
@@ -111,7 +148,7 @@ header {
    #side-bar-summary {
         padding: 60px 80px;
         border-radius: 5px;
-        box-shadow: 0 15px 30px 0 rgba(25, 71, 128, 0.2);
+        box-shadow: -10px 5px 12px  rgba(25, 71, 128, 0.2);
         background-color: #ffffff;
    }
 
@@ -120,7 +157,21 @@ header {
     width: 75px;
     height:75px ;
     border-radius: 5px;
-    padding: 10px 0 10px 25px;
+    padding: 10px;
+  }
+
+  .why-maven-read-more {
+    width: 146px;
+    height: 40px;
+    border-radius: 22.5px;
+    border: solid 2px #4a90e2;
+    text-decoration: none;
+    color:  #4a90e2;
+  }
+
+  .why-maven-read-more:hover {
+    background-color:  #4a90e2;
+    color: white;
   }
 
 /* THIRD SECTION STYLES - CAROUSEL STYLING */
@@ -131,6 +182,30 @@ header {
       width: 2%;
       background-color: orange;
 }
+
+.our-courses {
+  height: px;
+  background-color: rgba(91, 157, 227, 0.08);
+}
+
+/* FOURTH SECTION STYLES */
+
+.career-services {
+  height: 56px;
+  font-family: Titillium;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #707277;
+}
+
+/* FIFTH SECTION */
+
+
+
 
 
 /* Footer Styles all begin here */
@@ -153,5 +228,5 @@ footer .upperdiv div {
 .lowerdiv {
     background-color: #1f262d;
     color: #ffffff;
-    height: 10srem;
+    height: 5rem;
 }
