@@ -35,10 +35,16 @@
                                 <a class="nav-link" href="#">Contact Us</a>
                             </li>
                             <li class="nav-item active px-md-5">
-                                <a class="nav-link" href="#">Cart</a>
+                                <a class="nav-link" href="#">
+                                    <!-- <ion-icon name="basket-outline"></ion-icon> -->
+                                    Cart<span>0</span><img src="https://img.icons8.com/ios/26/000000/shopping-basket-2.png" >
+                                </a>
                             </li>
                         </ul>
-                    <span class="basket "><a href="#"><img src="https://img.icons8.com/ios/26/000000/shopping-basket-2.png" ></a></span>
+                    <!-- <span class="basket ">
+                        <a href="#"></a>
+                    </span>
+                    <span>0</span> -->
                     </div>
                 </nav>
 
@@ -74,56 +80,119 @@
 
     <!-- This is where I have my Footer container and all the elements inside it watch out -->
 
-        <footer class="container-fluid">
+    <footer class="">
 
-           
-
-
-
-            <div class=" container d-flex justify-content-around">
-
-                <div>
-                    <div class="footer-title">General</div>
-                    <ul>
-                        <li>Home</li>
-                        <li>Faq</li>
-                    </ul>
-                </div>
-
-                <div> 
-                    <div class="footer-title">Why Us</div>
-                    <ul>
-                        <li>Why study with us?</li>
-                        <li>Financial Aid - Study for just R1</li>
-                        <li> Internship - Work, Learn & Earn</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <div class="footer-title">Developer Courses</div>
-                    <ul>
-                        <li>Full Stack Web Developer</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <div class="footer-title">Contact Us</div>
+        <!-- Top Footer Elements -->
+        <div class="Upper-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-title blue-text">
+                            General
+                        </div>
+                        <div class="">
+                            <ul style="list-style-type: none;">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="faq/">Faq</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-title blue-text">
+                            Why Us
+                        </div>
+                        <div class="">
+                            <ul style="list-style-type: none;">
+                                <li><a href="why-us/">Why Study with us ?</a></li>
+                                <li><a href="financial-aid/">Financial Aid - Study for Just R1</a></li>
+                                <li><a href="internship-programme/">Internship - Work, Learn &amp; Earn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-title blue-text">
+                            Developer Courses
+                        </div>
+                        <div class="">
+                            <ul style="list-style-type: none;">
+                                <li><a href="courses/full-stack-web-developer/">Full Stack Web Developer</a></li>
+                                <li><a href="courses/4-week-front-end-web-developer/">Front End Web Fundamentals</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="footer-title blue-text">
+                            Contact Us
+                        </div>
+                        <div class="">
+                            <ul style="list-style-type: none;">
+                                <li>
+                                    <span><img src="img/phone-icon.svg" alt="Phone"></span>
+                                    <a href="" class=""><strong>+27 21 461 68 17</strong></a>
+                                </li>
+                                <li>
+                                    <span><img src="img/email-icon.svg" alt="Email"></span>
+                                    <p><a href="mailto:hello@themavenacademy.one" class="link">hello@themavenacademy.one</a></p>
+                                </li>
+                                <li class="mb-0">
+                                    <span><img src="img/location-icon.svg" alt="Location"></span>
+                                    <p>Office F01A, Brookside Office Park, 11 Imam Haron Road, Claremont, Western Cape, 7708</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
 
-            <div class="lowerdiv">
-                Footer
+        <!-- Lower Footer Elements -->
+
+        <div class="footer-bottom " style="
+        color: #ffffff;
+        background-color: #1f262d;
+        padding: 40px 0;">
+
+            <div class="container">
+                <div class="row " >
+                    <div class="col-md-9 align-self-center">
+                        <div class="copyright">
+                            <p class="mb-0">All Rights Reserved, Maven Academy (Pty) Ltd. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 align-self-center">
+                        <div class="social-media">
+                            <ul class=" " >
+                                <li>
+                                    <a href="https://web.facebook.com/The-Maven-Academy-108366197273447/?modal=admin_todo_tour" target="_blank" class="d-flex ">
+                                        <img src="img/facebook.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/AcademyMaven" target="_blank" class="d-flex">
+                                        <img src="img/twitter.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/themavenacademysa/" target="_blank" class="d-flex">
+                                        <img src="img/instagram.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
             </div>
-        </footer>
+        </div>
+
+    </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
-    <script src="/js/typewriter.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+</script>
+<script src="/js/scripts.js"></script>
 
 </body>
 </html>
