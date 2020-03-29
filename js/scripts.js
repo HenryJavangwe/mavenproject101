@@ -1,3 +1,5 @@
+// TYPEWRITER EFFECT SCRIPTS.
+
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -55,3 +57,22 @@ window.onload = function() {
     document.body.appendChild(css);
     
 };
+
+// CAREER SERVICES CAROUSEL.
+// ADDING AND REMOVING THE GRAYSCALE CLASS ON MOUSE HOVER.
+
+// const carouselItem = document.getElementById("grayscale");
+// item.addEventListener("mouseover", func, false);
+// item.addEventListener("mouseout", func1, false);
+
+// function func()
+// {  // not needed since item is already global, 
+//    // I am assuming this is here just because it's sample code?
+//    // var item = document.getElementById("button"); 
+//    item.setAttribute("style", "background-color:blue;")
+// }
+
+// function func1()
+// {  
+//    item.setAttribute("style", "background-color:green;")
+// }

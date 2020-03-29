@@ -3,13 +3,11 @@
 /* Header Styles */
 
 header {
-    /* width: 1440px; */
     height: 70px;
     box-shadow: inset 0 -1px 0 0 #cfd8dd;
     background-color: #36414c;
     padding: 26px 24px 24px 24px;
 }
-
 
 .navbar-nav {
     font-family: Titillium;
@@ -25,24 +23,20 @@ header {
 .navigate {
   text-decoration: none;
 }
-/* .navigate li a:hover {
-border-bottom: 4px solid #4a90e2;
-} */
 
 .navigate li a::after {
   content: '';
   display: block;
   width: 0;
-  height: 2px;
+  height: 4px;
   background: #4a90e2;
   transition: width .3s;
 }
 .navigate li a:hover::after {
   width: 100%;
-  margin-top: 5px;
+  margin-top: .5px;
 
 }
-
 
 .basket {
     width: 35px;
@@ -62,17 +56,11 @@ border-bottom: 4px solid #4a90e2;
 
   section {
     margin: 20px 0;
-    padding: 20px;
+    padding: 20px 0;
   }
 
 
   /* FIRST SECTION STYLES - HERO IMAGE AND THE NEXT LEVEL TRAINING HEADING*/
-
-
-
-
-
-
 
 .Next-level-training {
     font-family: Titillium;
@@ -176,16 +164,23 @@ border-bottom: 4px solid #4a90e2;
 
 /* THIRD SECTION STYLES - CAROUSEL STYLING */
 
-.carousel-control-prev,
-.carousel-control-next{
-      bottom: 1%;
-      width: 2%;
-      background-color: orange;
-}
-
 .our-courses {
   height: px;
   background-color: rgba(91, 157, 227, 0.08);
+}
+
+ #add-to-inquiry {
+  width: 100%;
+  height: 40px;
+  border-radius: 22.5px;
+  border: solid 2px #60a0e3;
+  background-color: #ffffff;
+  color: #4a90e2;
+  text-decoration: none;
+}
+#add-to-inquiry:hover{
+  background-color: #4a90e2 ;
+  color: #ffffff;
 }
 
 /* FOURTH SECTION STYLES */
@@ -202,31 +197,84 @@ border-bottom: 4px solid #4a90e2;
   color: #707277;
 }
 
+.grayscale {
+  opacity: .5;
+  filter: grayscale(1);
+}
+
+.grayscale:hover {
+  filter: none;
+  opacity: 1;
+}
+
+#find-out-more-career-services {
+  width: 146px;
+  height: 40px;
+  text-align: center;
+  border-radius: 22.5px;
+  border: solid 2px #60a0e3;
+  background-color: #ffffff;
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+#find-out-more-career-services:hover {
+  background-color: #4a90e2 ;
+  color: #ffffff;
+}
 /* FIFTH SECTION */
-
-
 
 
 
 /* Footer Styles all begin here */
 
+footer .Upper-footer {
+  padding: 80px 0;
+  vertical-align: middle;
+  color: #ffffff;
+  background-color: #36414c;
+};
 
-footer {
-    clear: both;
-}
-footer .upperdiv {
+
+
+.footer-bottom.container.row{
+  display: flex;
+  flex-wrap: wrap;
+} 
+  .social-media ul {
     display: flex;
-    height: 10rem;
-    background-color: #3e464b;
-    color: rgb(0, 146, 243);
-}
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+    justify-content: space-evenly;
+  }
+    .social-media ul li a{
+      width: 34px;
+      height: 34px;
+      
+      background-color: #5b9de3;
+      border-radius: 5px;
+      padding: 6px;
+    };
 
-footer .upperdiv div {
-    margin: auto;
-}
 
-.lowerdiv {
-    background-color: #1f262d;
-    color: #ffffff;
-    height: 5rem;
-}
+    /* MODAL STYLES */
+
+    .modal-dialog {
+      position: fixed;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+    }
+    
+    .modal-content {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 2px solid #3c7dcf;
+      border-radius: 0;
+      box-shadow: none;
+    }
