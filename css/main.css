@@ -59,6 +59,10 @@ header {
     padding: 20px 0;
   }
 
+  h6.font-weight-bold {
+    color: #459de9;
+    font-weight: bold;
+  }
 
   /* FIRST SECTION STYLES - HERO IMAGE AND THE NEXT LEVEL TRAINING HEADING*/
 
@@ -162,11 +166,16 @@ header {
     color: white;
   }
 
-/* THIRD SECTION STYLES - CAROUSEL STYLING */
+/* THIRD SECTION STYLES - COURSES CAROUSEL STYLING */
 
 .our-courses {
   height: px;
   background-color: rgba(91, 157, 227, 0.08);
+}
+
+.card {
+  width: 20rem;
+  border: none;
 }
 
  #add-to-inquiry {
@@ -181,6 +190,17 @@ header {
 #add-to-inquiry:hover{
   background-color: #4a90e2 ;
   color: #ffffff;
+}
+
+/* COURSE OUTLINE PAGES' STYLING */
+
+li.sub-tabs-item {
+  margin-right: 35px;
+}
+
+.block-text {
+  background-color: rgba(91, 157, 227, 0.08);
+  margin-top: 30px;
 }
 
 /* FOURTH SECTION STYLES */
@@ -235,6 +255,9 @@ footer .Upper-footer {
   background-color: #36414c;
 };
 
+.Upper-footer li{
+  text-align: center;
+}
 
 
 .footer-bottom.container.row{
@@ -255,26 +278,4 @@ footer .Upper-footer {
       background-color: #5b9de3;
       border-radius: 5px;
       padding: 6px;
-    };
-
-
-    /* MODAL STYLES */
-
-    .modal-dialog {
-      position: fixed;
-      margin: 0;
-      width: 100%;
-      height: 100%;
-      padding: 0;
-    }
-    
-    .modal-content {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      border: 2px solid #3c7dcf;
-      border-radius: 0;
-      box-shadow: none;
     }

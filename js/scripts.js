@@ -76,3 +76,30 @@ window.onload = function() {
 // {  
 //    item.setAttribute("style", "background-color:green;")
 // }
+
+
+
+//COURSE OUTLINE SCRIPTS TO TOGGLE DIFFERENT TABS 
+
+
+// SHOPPING CART SCRIPTS
+console.log("running")
+const addToInquiry = document.querySelectorAll("#add-to-inquiry");
+
+for (let i =0; i<addToInquiry.length; i++){
+    addToInquiry[i].addEventListener('click', ($event)=>{
+        $event.preventDefault();
+        cartNumbers();
+    })
+};
+
+function cartNumbers (){
+    localStorage.setItem('cartNumbers', 1);
+    let productNumbers = localStorage.getItem('cartNumbers');
+    console.log(productNumbers);
+    productNumbers = parseInt(productNumbers);
+    console.log(typeof productNumbers);
+    
+    
+    
+};
