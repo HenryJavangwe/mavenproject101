@@ -9,7 +9,7 @@ header {
     padding: 26px 24px 24px 24px;
 }
 
-.navbar-nav {
+.navbar-nav.nav-item.nav-link {
     font-family: Titillium;
     font-size: 12px;
     font-weight: 600;
@@ -59,6 +59,12 @@ header {
     padding: 20px 0;
   }
 
+  h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 56px;
+    text-align: center;
+  }
+
   h6.font-weight-bold {
     color: #459de9;
     font-weight: bold;
@@ -66,9 +72,10 @@ header {
 
   /* FIRST SECTION STYLES - HERO IMAGE AND THE NEXT LEVEL TRAINING HEADING*/
 
-.Next-level-training {
-    font-family: Titillium;
-    font-size: 56px;
+.Next-level-training,
+.contacts-banner-wrap {
+    font-family: 'Titillium Web', sans-serif;
+   
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -80,6 +87,9 @@ header {
     background-color: rgba(91, 157, 227, 0.08);
     margin-top: 0;
     
+  }
+  .Next-level-training {
+    font-size: 56px; 
   }
 
   .text-style-1 {
@@ -279,3 +289,6 @@ footer .Upper-footer {
       border-radius: 5px;
       padding: 6px;
     }
+
+
+    /* MEDIA QUERY RESPONSIVE DESIGNS */
