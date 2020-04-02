@@ -67,20 +67,20 @@ const addToInquiry = document.querySelectorAll("#add-to-inquiry");
 let courses = [
     {
         name    : 'Become a Full Stack Web Developer ',
-        tag     : 'Full Stack Web Development',
-        price   : '26000',
+        tag     : 'webdeveloper',
+        price   : 26000,
         inCart  : 0
     },
     {
         name    : 'Become a Front End Web Developer ',
-        tag     : 'Front End Web Development',
-        price   : '9000',
+        tag     : 'frontend-dev',
+        price   : 9000,
         inCart  : 0
     },
     {
         name    : 'Become a Java Spring Boot Developer',
-        tag     : 'Java Spring Boot Development',
-        price   : '16000',
+        tag     : 'spring-boot-dev',
+        price   : 16000,
         inCart  : 0
     },
 ];
@@ -91,7 +91,7 @@ for (let i =0; i<addToInquiry.length; i++){
     addToInquiry[i].addEventListener('click', ($event)=>{
         $event.preventDefault();
         cartNumbers(courses[i]);
-        // totalCost(courses[i]);
+        totalCost(courses[i]);
     })
 };
 // A function that will look at the local storage numbers and sat the number on the basket icon to be exactly as the number in the local storage- in order to keep the number from disappearing when the page is refreshed
@@ -122,7 +122,7 @@ function cartNumbers (course){
 function setItems (course){
     let cartItems = localStorage.getItem('coursesInCart');
     cartItems = JSON.parse(cartItems);
-    console.log('my cart items are', cartItems);
+    // console.log('my cart items are', cartItems);
     if (cartItems != null){
         
         if(cartItems[course.tag] == undefined){
@@ -141,5 +141,65 @@ function setItems (course){
     localStorage.setItem("coursesInCart", JSON.stringify(cartItems));
 };
 
+function totalCost(course){
+// console.log("The course price is ", course.price);
+let cartCost = localStorage.getItem("totalCost");
+
+console.log("my cartCost is", cartCost );
+console.log(typeof cartCost);
+
+if(cartCost != null){
+    cartCost=parseInt(cartCost);
+    localStorage.setItem("totalCost", cartCost + course.price);
+}else {
+    localStorage.setItem("totalCost", course.price );
+}
+}
+
+function displayCart(){
+    let cartItems = localStorage.getItem("coursesInCart");
+    cartItems = JSON.parse(cartItems);
+    let courseContainer = document.querySelector('.course-plug-in');
+
+    let cartCost = localStorage.getItem("totalCost");
+    console.log(cartItems);
+    if( cartItems && courseContainer){
+        // console.log('On the Cart page running'); this condition checks to see if we have items in the local storage and also if we're on the cart page, if the conditions are met then the function will run.
+        courseContainer.innerHTML = "";
+        Object.values(cartItems).map(item => {
+            courseContainer.innerHTML += `
+            <div class="course-plug-in">
+                <ion-icon name="close-outline"></ion-icon>
+                <img src="img/${item.tag}.png">
+                <span> ${item.name}</span>
+            </div>
+
+            <div class="price"> R${item.price},00</div>
+
+            <div class="quantity">
+            <ion-icon name="chevron-back-circle-outline"></ion-icon>
+            <span>${item.inCart}</span>
+            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+            </div>
+
+            <div class="total"> R${item.inCart * item.price},00 </div>
+            `;
+        });
+
+        courseContainer.innerHTML += `
+        <div class="basketTotalContainer">
+        <h4 class="basketTotalTitle">
+        Basket Total
+        </h4>
+
+        <h4 class="basketTotal">
+        R${cartCost},00
+        </h4>
+        </div>
+        `
+
+    }
+}
 // calling the onload function so that it runs.
 onloadCartNumbers ();
+displayCart();

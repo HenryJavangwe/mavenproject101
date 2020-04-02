@@ -1,4 +1,6 @@
-
+html, body {
+  overflow-x: hidden;
+}
 
 /* Header Styles */
 
@@ -111,7 +113,7 @@ header {
   }
   
   .button-more {
-    width: 350px;
+    width: 300px;
     height: 60px;
     border-radius: 30px;
     box-shadow: 0 10px 20px 0 rgba(25, 71, 128, 0.2);
@@ -213,6 +215,11 @@ li.sub-tabs-item {
   margin-top: 30px;
 }
 
+.courses-mobile {
+  display: none;
+}
+
+
 /* FOURTH SECTION STYLES */
 
 .career-services {
@@ -252,11 +259,91 @@ li.sub-tabs-item {
   background-color: #4a90e2 ;
   color: #ffffff;
 }
-/* FIFTH SECTION */
+/* ----Contact Us Page ---- */
 
 
+.form-control {
+  border-radius: 22.5px;
+}
 
-/* Footer Styles all begin here */
+/* -------CART PAGE------- */
+
+.courses-container {
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  padding-bottom: 100px;
+}
+
+.courses-container ion-icon {
+  font-size: 25px;
+  color: #0437dd;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.courses-header {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 3px solid #d8d8d8;
+  margin: 0 auto;
+}
+
+.course-title {
+  width: 45%;
+
+}
+
+.price {
+  width: 15%;
+  /* border-bottom: 1px solid #d8d8d8; */
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  /* border-bottom: 1px solid #d8d8d8; */
+}
+
+.total {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  /* border-bottom: 1px solid #d8d8d8; */
+}
+
+.course-plug-in {
+  width: 45%;
+  /* display:flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #d8d8d8; */
+}
+
+.basketTotalContainer {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.basketTotalTitle {
+  width: 30%;
+}
+
+.basketTotal{
+  width: 10%;
+}
+
+/* ---Footer Styles all begin here--- */
 
 footer .Upper-footer {
   padding: 80px 0;
@@ -292,3 +379,29 @@ footer .Upper-footer {
 
 
     /* MEDIA QUERY RESPONSIVE DESIGNS */
+
+    @media all and (max-width: 414px){
+      nav
+      .navbar-collapse,
+      .nav-container{
+          background-color: #459de9;
+          color: white;
+      }
+      .navbar-brand{
+        position: initial;
+      }
+
+      /* .courses-mobile {
+        display: flex;
+      }
+      .courses-desktop {
+        display: none;
+      }
+
+      .career-services-mobile{
+        display: flex;
+      }
+      .career-services-desktop{
+        display: none; 
+      }*/
+    }

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/owl.carousel.min.css"> 
+    <link rel="stylesheet" href="/owl.theme.default.min.css">
 </head>
 
 <body class="">
@@ -29,7 +31,7 @@
                                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item active px-md-5">
-                                <a class="nav-link" href="#"  data-toggle="modal" data-target=".bd-example-modal-xl">
+                                <a class="nav-link" href="courses.html">
                                     Courses
                                 </a>
                             </li>
@@ -58,7 +60,7 @@
 
 
             <!-- first section -->
-            <section class=" Next-level-training "> 
+            <section class=" Next-level-training " > 
 
                 <p class="text-style-1 text-dark">
                     Next Level Training in <br>
@@ -68,14 +70,14 @@
                         </span>
                       </span>
                 </p>
-                    <img src="/img/tech-mavens.png" alt="tech-mavens" class="tech-mavens" srcset="img/tech-mavens@2x.png 2x, img/tech-mavens@3x.png 3x">
+                    <img src="/img/tech-mavens.png" alt="tech-mavens" class="tech-mavens img-fluid" srcset="img/tech-mavens@2x.png 2x, img/tech-mavens@3x.png 3x">
                 
                 <p class="Take-your-tech-caree"> 
                     Take your tech career to the next level with our immersive software development programmes 
                 </p>
 
 
-                <button class="button-more" >
+                <button class="button-more " >
                     <p class="FIND-OUT-MORE">FIND OUT MORE</p> 
                 </button>
 
@@ -93,10 +95,10 @@
                 margin-right: 0px;
                 margin-left: 0px;">
 
-                    <article id="why-maven-academy" class="col-lg-6 col-sm-12 ">
+                    <article id="why-maven-academy" class="col-lg-6 col-sm-12 row justify-content-center">
 
-                        <h1 class="Why-Maven-Academy ">Why Maven Academy</h1>
-                        <p class="Were-disrupting-the">
+                        <h1 class="Why-Maven-Academy ">Why Maven Academy?</h1>
+                        <p class="Were-disrupting-the ">
                             We’re disrupting the way you learn new technology by immersing you into real-world work conditions so you can learn what you need to hit the ground running in the top development jobs at the head of the line.
 
                             After two decades of building bespoke software solutions, and from our own hands-on coding experience, we’ve crafted a comprehensive software development curriculum that equips you for today’s complex technical work environments and prepares you for the future with exposure to cutting-edge technology.
@@ -109,12 +111,12 @@
                     </article>
 
                     <article id="side-bar-summary" class="col-lg-6 col-sm-12 row ">
-                            <div class="row">
-                                <div class="col-2 img-fill">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-2 col-md-2 col-sm-12 img-fill">
                                 <img class=" " src="https://themavenacademy.one/images/career-changers.svg" alt="learn by creating">
                                 </div>
 
-                                <div class="col-10">
+                                <div class="col-lg-10 col-md-10 col-sm-12">
                                     <p>
                                         <h5>Learn by creating </h5>
                                         Master the art of code by working on projects that reflect the kind of work you will carry out for future employers and clients.
@@ -122,11 +124,11 @@
                                 </div>
                             </div>
         
-                            <div class="row">
-                                <div class="col-2 img-fill">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-2 col-md-2 col-sm-12 img-fill">
                                         <img class="" src="https://themavenacademy.one/images/career-boosters.svg" alt="Expert Coaching">
                                 </div>
-                                <div class="col-10">
+                                <div class="col-lg-10 col-md-10 col-sm-12">
                                     <p>
                                         <h5>Expert coaching </h5>
                                         Adopt the best-practice development techniques with on-demand access to mentors bringing their global tech exposure directly to you. Consistent feedback and mentorship refine your skills until you are comfortable producing efficient, production-grade code without hesitation.
@@ -134,11 +136,11 @@
                                 </div>
                             </div>
         
-                            <div class="row">
-                                <div class="col-2 img-fill">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-2 col-md-2 col-sm-12 img-fill">
                                         <img class="" src="https://themavenacademy.one/images/recent-graduates.svg"  alt="intern programme">
                                 </div>
-                                <div class="col-10">
+                                <div class="col-lg-10 col-md-10 col-sm-12">
                                     <p>
                                         <h5>Internship Programme </h5>
                                         Don’t struggle with the job hunt! Hit the ground sprinting with our exclusive platform that allows you to Work, Learn, and Earn at the same time.
@@ -164,7 +166,7 @@
 
             <!-- Courses Carousel Begins Here -->
 
-            <div id="carousel-courses" class="carousel slide mt-5 " data-ride="carousel">
+            <div id="carousel-courses" class="carousel slide mt-5 courses-desktop" data-ride="carousel">
                      
                     <div class="carousel-inner">
 
@@ -357,6 +359,91 @@
                 </div>
             </div>
 
+            <div id="carousel-courses" class="carousel slide mt-5 courses-mobile" data-ride="carousel">
+                     
+                    <div class="carousel-inner">
+
+                    <div class="carousel-item active ">
+                        
+                        <div class="container">
+                            <div class="row">
+                                <!-- card 1-->
+                                <div class="col-sm-12 col-lg 4">
+                                    <div class="card pt-5 px-2" style="" id="course-cards">
+                                        <div>
+                                            <h6 style="color: #459de9;" class="font-weight-bold">Become a Full Stack Web Developer </h6>
+                                            <p>12 Week Course - In classroom </p>
+                                        </div>
+                                        <img src="/img/webdeveloper.png" class="card-img-top align-self-center alt="webdeveloper" style="width: 210px; height: 210px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title font-weight-bold" style="color: #459de9;">R26,000,00 Excl Vat</h5>
+                                            <p class="card-text">
+                                            <a href="/course details/web-dev-detail.html">
+                                                View course detail
+                                            </a>
+                                            </p>
+                                            <a href="/course details/web-dev-detail.html" class="btn btn-primary" id="add-to-inquiry">Add to enquiry</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        
+
+                        <div class="container">
+                            <div class="row">
+                                <!-- card 2-->
+                                <div class="col-sm-12 col-lg 4">
+                                    <div class="card pt-5" id="course-cards">
+                                        <h6 style="color: #459de9;" class="font-weight-bold">Become a Front End Web Developer  </h6>
+                                        <p> 4 Week Course - In classroom </p>
+                                        <img src="/img/frontend-dev.png" class="card-img-top align-self-center" alt="..." style="width: 210px; height: 210px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title font-weight-bold" style="color: #459de9;">R9,000,00 Excl Vat</h5>
+                                            <p class="card-text">
+                                                <a href="/course details/front-end-detail.html">
+                                                    View course detail
+                                                </a>
+                                            </p>
+                                          <a href="#" class="btn btn-primary" id="add-to-inquiry">Add to enquiry</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="carousel-item ">
+                        
+                        <div class="container">
+                            <div class="row">
+                                <!-- card 1-->
+                                <div class="col-sm-12 col-lg 4">
+                                    <div class="card pt-5" id="course-cards">
+                                        <h6 style="color: #459de9;" class="font-weight-bold">Become a Java Spring Boot Developer </h6>
+                                        <p> 12 Week Course - In classroom </p>
+                                        <img src="/img/spring-boot-dev.png" class="card-img-top align-self-center" alt="..." style="width: 210px; height: 210px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title font-weight-bold" style="color: #459de9;">R16,000,00 Excl Vat</h5>
+                                            <p class="card-text">
+                                                <a href="/course details/java-springboot-detail.html">
+                                                    View course detail
+                                                </a>
+                                            </p>
+                                          <a href="#" class="btn btn-primary" id="add-to-inquiry">Add to enquiry</a>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="container">
                 <div class="d-flex my-5">
                     <a href="#carousel-courses" class="" role="button" data-slide="next">
@@ -388,10 +475,12 @@
 
                
                 <!--  CAREER SERVICES CAROUSEL -->
+                <!-- career services slider for Desktop -->
 
                 <div class="container">
                     <div class="row">
-                        <div id="carousel-career-services" class="carousel slide " data-ride="carousel" >
+
+                        <div id="carousel-career-services" class="carousel slide career-services-desktop" data-ride="carousel" >
                             <div class="carousel-inner">
 
                                 <div class="carousel-item active ">
@@ -473,9 +562,57 @@
                                 </div>
                             </div>
                         </div> 
+
+                        <!-- career services slider for Mobile -->
+                        <div id="carousel-career-services" class="carousel slide career-services-mobile" data-ride="carousel" > 
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active ">
+                                    <div class="card-deck">
+
+                                        <div class="card " style="width: 250px;">
+                                        <img src="/img/companies-logo/logo-nedbank.png" class="card-img-top grayscale" alt="...">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item ">
+            
+                                    <div class="card-deck">
+            
+                                        <div class="card" style="width: 250px;">
+                                        <img src="/img/companies-logo/logo-vuma.png" class="card-img-top grayscale" alt="...">
+                                        </div>
+                                        
+                                    </div>
+            
+                                </div>
+                                <div class="carousel-item ">
+            
+                                    <div class="card-deck">
+            
+                                        <div class="card" style="width: 250px;">
+                                        <img src="/img/companies-logo/logo-flash.png" class="card-img-top grayscale" alt="...">
+                                        </div>
+                                        
+                                    </div>
+            
+                                </div>
+
+                                <div class="carousel-item ">
+            
+                                    <div class="card-deck">
+                                        <div class="card" style="width: 250px;">
+                                            <img src="/img/companies-logo/logo-zando.png" class="card-img-top grayscale" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
+
                 <div class="container">
                     <div class="d-flex my-5">
                         <a href="#carousel-career-services" class="" role="button" data-slide="next">
@@ -564,8 +701,8 @@
 
             <!-- LAST SECTION -->
 
-            <section class=" text-center">
-                <img src="/img/contact-banner.png" alt="" srcset="">
+            <section class=" text-center ">
+                <img src="/img/contact-banner.png" alt="" srcset="" class="img-fluid">
 
                 <h1>Thank you for your enquiry.</h1>
                 <p>One of our friendly course consultants and we’ll get back to you within 24 hours.</p>
@@ -691,6 +828,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <script src="/js/scripts.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 
 </body>
 </html>
