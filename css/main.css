@@ -2,31 +2,22 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Header Styles */
-
-header {
-    height: 70px;
-    box-shadow: inset 0 -1px 0 0 #cfd8dd;
-    background-color: #36414c;
-    padding: 26px 24px 24px 24px;
+/* --- Header Styles ---- */
+.navbar {
+  box-shadow: inset 0 -1px 0 0 #cfd8dd;
+  background-color: #36414c;
+  padding: 26px 24px 24px 24px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #ffffff;
 }
-
-.navbar-nav.nav-item.nav-link {
-    font-family: Titillium;
-    font-size: 12px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.67;
-    letter-spacing: normal;
-    color: white;
+.nav-item {
+  color: #ffffff;
 }
-
-.navigate {
-  text-decoration: none;
-}
-
-.navigate li a::after {
+.u-bline::after {
   content: '';
   display: block;
   width: 0;
@@ -34,19 +25,43 @@ header {
   background: #4a90e2;
   transition: width .3s;
 }
-.navigate li a:hover::after {
+.u-bline:hover::after {
   width: 100%;
   margin-top: .5px;
-
+}
+header a:hover{
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .basket {
-    width: 35px;
-    height: 35px;
-    background-color: #ffffff;
-    padding: 5px;
-    border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 50%;
 }
+
+/* media query navbar */
+@media all and (max-width: 768px){
+  .u-bline::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #4a90e2;
+    transition: width .3s;
+  }
+  .u-bline:hover::after {
+    width: 100%;
+    margin-top: .5px;
+  }
+  header a:hover{
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
 
 /* MAIN SECTION STYLES FROM HERE UNTIL NEXT COMMENT */
 
@@ -143,41 +158,49 @@ header {
   }
 
 
-  /* HERE IS WHERE THE SECOND SECTION STYLES ARE LAID OUT
-   */
+    /* ---- Second Section--- */
 
-   #why-maven-academy {
-       padding: 60px 100px;
-   }
-   #side-bar-summary {
-        padding: 60px 80px;
-        border-radius: 5px;
-        box-shadow: -10px 5px 12px  rgba(25, 71, 128, 0.2);
-        background-color: #ffffff;
-   }
+  
+#side-bar-summary {
+  padding: 60px 40px;
+  border-radius: 5px;
+  box-shadow: -10px 5px 12px  rgba(25, 71, 128, 0.2);
+  background-color: #ffffff;
+}
+.img-fill {
+  background-color: #4a90e2;
+  width: 75px;
+  height:75px ;
+  border-radius: 5px;
+  padding: 10px;
+  margin: auto;
+}
 
-   .img-fill {
-    background-color: #4a90e2;
-    width: 75px;
-    height:75px ;
-    border-radius: 5px;
-    padding: 10px;
+.why-maven-read-more {
+  width: 146px;
+  height: 40px;
+  border-radius: 22.5px;
+  border: solid 2px #4a90e2;
+  text-decoration: none;
+  color:  #4a90e2;
+}
+
+.why-maven-read-more:hover {
+  background-color:  #4a90e2;
+  color: white;
+}
+
+/* media Query */
+@media all and (min-width: 768px){
+  #why-maven-academy {
+    padding: 40px 80px;
   }
-
-  .why-maven-read-more {
-    width: 146px;
-    height: 40px;
-    border-radius: 22.5px;
-    border: solid 2px #4a90e2;
-    text-decoration: none;
-    color:  #4a90e2;
+}
+@media all and (max-width: 767px){
+  #side-bar-summary {
+    text-align: center;
   }
-
-  .why-maven-read-more:hover {
-    background-color:  #4a90e2;
-    color: white;
-  }
-
+}
 /* THIRD SECTION STYLES - COURSES CAROUSEL STYLING */
 
 .our-courses {
@@ -375,33 +398,4 @@ footer .Upper-footer {
       background-color: #5b9de3;
       border-radius: 5px;
       padding: 6px;
-    }
-
-
-    /* MEDIA QUERY RESPONSIVE DESIGNS */
-
-    @media all and (max-width: 414px){
-      nav
-      .navbar-collapse,
-      .nav-container{
-          background-color: #459de9;
-          color: white;
-      }
-      .navbar-brand{
-        position: initial;
-      }
-
-      /* .courses-mobile {
-        display: flex;
-      }
-      .courses-desktop {
-        display: none;
-      }
-
-      .career-services-mobile{
-        display: flex;
-      }
-      .career-services-desktop{
-        display: none; 
-      }*/
     }
