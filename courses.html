@@ -4,56 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Maven Academy</title>
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
      <link rel="stylesheet" href="./assets/owlcarousel/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
-     <link rel="stylesheet" href="/css/main.css">
+     <link rel="stylesheet" href="./css/main.css">
    
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web&display=swap" rel="stylesheet">
 </head>
 
 <body class="">
-
-        <!--  This is where I have my Header container and the divs inside it  -->
-        <header class="navbar position-sticky">
-
-            <div class="nav-bar justify-content container ">
-
-                <a href="index.html"><img src="/img/Fav icon.png" alt="" class="navbar-brand"></a>
-
-                <nav class="navbar navbar-expand-lg navbar-dark  ">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Header-Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html"><img src="./img/Fav icon.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav navigate ">
-                            <li class="nav-item active px-md-5 ">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active px-md-5">
-                                <a class="nav-link" href="courses.html" >
-                                    Courses
-                                </a>
-                            </li>
-                            <li class="nav-item active px-md-5">
-                                <a class="nav-link" href="contacts.html">
-                                    Contact Us
-                                </a>
-                            </li>
-                            <li class="nav-item active px-md-5">
-                                <a class="nav-link" href="cart.html">Cart</a>
-                            </li>
-                            <span class="basket "><a href="cart.html"><img src="https://img.icons8.com/ios/26/000000/shopping-basket-2.png" ></a></span>
-                            <span class="text-light  basket-value">0</span>
-                        </ul>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav d-flex ">
+                        <a class="nav-item u-bline mr-5 " href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item u-bline mr-5" href="./courses.html">Courses</a>
+                        <a class="nav-item u-bline mr-5" href="./contacts.html">Contact</a>
+                        <a class="nav-item u-bline mr-5" href="./cart.html">Cart</a>
+                        <a class="nav-item mr-5 basket" href="./cart.html"><img src="https://img.icons8.com/ios/26/000000/shopping-basket-2.png" ></a>
                     </div>
-                </nav>
-
+                </div>
             </div>
-
-        </header>
-
-                        <!-- This is where my main container starts and I have different sections and divs inside it  -->
+        </nav>
+    </header>
+    <!-- This is where my main container starts and I have different sections and divs inside it  -->
     
         <main >
 
@@ -63,31 +43,31 @@
                     <article class="col-lg-4 col-md-6 col-sm-12 ">
                         <div class="card pt-5 px-2 text-center align-self-center" id="course-cards">
                             <div>
-                                <h6 style="color: #459de9;" class="font-weight-bold">Become a Full Stack Web Developer </h6>
+                                <h6 >Become a Full Stack Web Developer </h6>
                                 <p>12 Week Course - In classroom </p>
                             </div>
-                            <img src="/img/webdeveloper.png" class="card-img-top align-self-center alt="" style="width: 210px; height: 210px;">
+                            <img src="./img/webdeveloper.png" class="card-img-top align-self-center alt="" style="width: 210px; height: 210px;">
                             <div class="card-body">
                                 <h5 class="card-title font-weight-bold" style="color: #459de9;">R26,000,00 Excl Vat</h5>
                                 <p class="card-text">
-                                <a href="/course details/web-dev-detail.html">
+                                <a href="./assets/course details/web-dev-detail.html">
                                     View course detail
                                 </a>
                                 </p>
-                                <a href="/course details/web-dev-detail.html" class="btn btn-primary" id="add-to-inquiry">Add to enquiry</a>
+                                <a href="" class="btn btn-primary" id="add-to-inquiry">Add to enquiry</a>
                             </div>
                         </div>
                     </article>
                     <!-- Course 2 Front End Dev -->
                     <article class="col-lg-4 col-md-6 col-sm-12">
                         <div class="card pt-5 text-center" id="course-cards">
-                            <h6 style="color: #459de9;" class="font-weight-bold">Become a Front End Web Developer  </h6>
+                            <h6 >Become a Front End Web Developer  </h6>
                             <p> 4 Week Course - In classroom </p>
-                            <img src="/img/frontend-dev.png" class="card-img-top align-self-center" alt="..." style="width: 210px; height: 210px;">
+                            <img src="./img/frontend-dev.png" class="card-img-top align-self-center" alt="..." style="width: 210px; height: 210px;">
                             <div class="card-body">
                                 <h5 class="card-title font-weight-bold" style="color: #459de9;">R9,000,00 Excl Vat</h5>
                                 <p class="card-text">
-                                    <a href="/course details/front-end-detail.html">
+                                    <a href="./assets/course details/front-end-detail.html">
                                         View course detail
                                     </a>
                                 </p>
@@ -98,13 +78,13 @@
                     <!-- Course 3 Java Spring Boot Developer -->
                     <article class="col-lg-4 col-md-6 col-sm-12 ">
                         <div class="card pt-5 text-center" id="course-cards">
-                            <h6 style="color: #459de9;" class="font-weight-bold">Become a Java Spring Boot Developer </h6>
+                            <h6 >Become a Java Spring Boot Developer </h6>
                             <p> 12 Week Course - In classroom </p>
-                            <img src="/img/spring-boot-dev.png" class="card-img-top align-self-center" alt="..." style="width: 210px; height: 210px;">
+                            <img src="./img/spring-boot-dev.png" class="card-img-top align-self-center" alt="..." style="width: 210px; height: 210px;">
                             <div class="card-body">
                                 <h5 class="card-title font-weight-bold" style="color: #459de9;">R16,000,00 Excl Vat</h5>
                                 <p class="card-text">
-                                    <a href="/course details/java-springboot-detail.html">
+                                    <a href="./assets/course details/java-springboot-detail.html">
                                         View course detail
                                     </a>
                                 </p>
@@ -131,7 +111,7 @@
                             </div>
                             <div class="">
                                 <ul style="list-style-type: none;">
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="./index.html">Home</a></li>
                                     <li><a href="faq/">Faq</a></li>
                                 </ul>
                             </div>
@@ -154,8 +134,8 @@
                             </div>
                             <div class="">
                                 <ul style="list-style-type: none;">
-                                    <li><a href="courses/full-stack-web-developer/">Full Stack Web Developer</a></li>
-                                    <li><a href="courses/4-week-front-end-web-developer/">Front End Web Fundamentals</a></li>
+                                    <li><a href="./assets/course details/web-dev-detail.html">Full Stack Web Developer</a></li>
+                                    <li><a href="./assets/course details/front-end-detail.html">Front End Web Fundamentals</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -166,15 +146,15 @@
                             <div class="">
                                 <ul style="list-style-type: none;">
                                     <li>
-                                        <span><img src="img/phone-icon.svg" alt="Phone"></span>
+                                        <span><img src="./img/phone-icon.svg" alt="Phone"></span>
                                         <a href="" class=""><strong>+27 21 461 68 17</strong></a>
                                     </li>
                                     <li>
-                                        <span><img src="img/email-icon.svg" alt="Email"></span>
+                                        <span><img src="./img/email-icon.svg" alt="Email"></span>
                                         <p><a href="mailto:hello@themavenacademy.one" class="link">hello@themavenacademy.one</a></p>
                                     </li>
                                     <li class="mb-0">
-                                        <span><img src="img/location-icon.svg" alt="Location"></span>
+                                        <span><img src="./img/location-icon.svg" alt="Location"></span>
                                         <p>Office F01A, Brookside Office Park, 11 Imam Haron Road, Claremont, Western Cape, 7708</p>
                                     </li>
                                 </ul>
@@ -203,17 +183,17 @@
                                 <ul class=" " >
                                     <li>
                                         <a href="https://web.facebook.com/The-Maven-Academy-108366197273447/?modal=admin_todo_tour" target="_blank" class="d-flex ">
-                                            <img src="img/facebook.svg" alt="">
+                                            <img src="./img/facebook.svg" alt="">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="https://twitter.com/AcademyMaven" target="_blank" class="d-flex">
-                                            <img src="img/twitter.svg" alt="">
+                                            <img src="./img/twitter.svg" alt="">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="https://www.instagram.com/themavenacademysa/" target="_blank" class="d-flex">
-                                            <img src="img/instagram.svg" alt="">
+                                            <img src="./img/instagram.svg" alt="">
                                         </a>
                                     </li>
                                 </ul>

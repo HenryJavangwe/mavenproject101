@@ -4,287 +4,246 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Maven Academy</title>
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web&display=swap" rel="stylesheet">
 </head>
 
 <body class="">
-
-        <!--  This is where I have my Header container and the divs inside it  -->
-        <header class="navbar position-sticky">
-
-            <div class="nav-bar justify-content container ">
-
-                <a href="index.html"><img src="/img/Fav icon.png" alt="" class="navbar-brand"></a>
-
-                <nav class="navbar navbar-expand-lg navbar-dark  ">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Header-Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html"><img src="./img/Fav icon.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav navigate ">
-                            <li class="nav-item active px-md-5 ">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active px-md-5">
-                                <a class="nav-link" href="courses.html" >
-                                    Courses
-                                </a>
-                            </li>
-                            <li class="nav-item active px-md-5">
-                                <a class="nav-link" href="#">
-                                    Contact Us
-                                </a>
-                            </li>
-                            <li class="nav-item active px-md-5">
-                                <a class="nav-link" href="cart.html">Cart</a>
-                            </li>
-                            <span class="basket "><a href="cart.html"><img src="https://img.icons8.com/ios/26/000000/shopping-basket-2.png" ></a></span>
-                            <span class="text-light  basket-value">0</span>
-                        </ul>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav d-flex ">
+                        <a class="nav-item u-bline mr-5 " href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item u-bline mr-5" href="./courses.html">Courses</a>
+                        <a class="nav-item u-bline mr-5" href="./contacts.html">Contact</a>
+                        <a class="nav-item u-bline mr-5" href="./cart.html">Cart</a>
+                        <a class="nav-item mr-5 basket" href="./cart.html"><img src="https://img.icons8.com/ios/26/000000/shopping-basket-2.png" ></a>
                     </div>
-                </nav>
-
+                </div>
             </div>
-
-        </header>
-
-                        <!-- This is where my main container starts and I have different sections and divs inside it  -->
-    
-        <main >
-
-
-            <!-- first section -->
-            <section class=" contacts-banner-wrap "> 
-
-                <div class="mb-5 ">
-                    <h1 class="">Get in touch with us</h1>
-                </div>
-                <div class="banner-img mb-4">
-                    <img src="img/contact-banner.png" srcset="img/contact-banner@2x.png 2x, img/contact-banner@3x.png 3x" alt="Get in touch">
-                </div>
-                
-                <div class="banner-text">
-                    <p class="f-semibold f-18">Get pumped, get skilled</p>
-                </div>
-
-
-            </section>
-
-            <!-- Second Section  -->
-                </section>
-
-                    <section class="">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="main-title">
-                                        <h2 class="regular">The Maven Academy </h2>
-                                    </div>
-                                    <div class="main-title-content">
-                                        <p class="mb-3"><strong>Address:</strong></p>
-                                        <p class="mb-4">Office F01A, Brookside Office Park, 11 Imam Haron Road, <br>Claremont, Western Cape, 7708</p>
-                                        <p class="mb-3"><strong>Say hello:</strong></p>
-                                        <p class="mb-4"><a href="mailto:hello@themavenacademy.one" class="blk-link">hello@themavenacademy.one</a></p>
-                                        <p>Or call us directly on <a href="tel:+27 21 461 68 17" class="num-link"><strong>+27 21 461 68 17 </strong></a></p>
-                                        <p>Schedule a call with one of our friendly course consultants and <br>we’ll get back to you within 24 hours.</p>
-                                    </div>
-                                    <div class="social-media">
-                                        <ul class="d-flex ">
-                                            <li>
-                                                <a href="https://web.facebook.com/The-Maven-Academy-108366197273447/?modal=admin_todo_tour" target="_blank" class="d-flex justify-content-center">
-                                                    <img src="img/facebook.svg" alt="">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://twitter.com/AcademyMaven" target="_blank" class="d-flex justify-content-center">
-                                                    <img src="img/twitter.svg" alt="">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.instagram.com/themavenacademysa/" target="_blank" class="d-flex justify-content-center">
-                                                    <img src="img/instagram.svg" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="bg-light-blue inquiry-form mb-5">
-                                        <div class="main-title-content mb-5">
-                                            <p class="mb-3"><strong>Send us an enquiry </strong></p>
-                                            <p>Schedule a call with one of our friendly course consultants and we’ll get back to you within 24 hours. </p>
-                                        </div>
-                                        <form id="frmcontactus" name="frmcontactus" method="post" class="form-error" >
-                                            <div class="form-group">
-                                                <input type="text" name="fname" id="fname" class="form-control" placeholder="Your name" data-rule-required="true" data-msg-required="Please enter Your name">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="text" name="surname" id="surname" class="form-control" placeholder="Your surname" data-rule-required="true" data-msg-required="Please enter Your surname">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="email" name="email" id="email" class="form-control" placeholder="Your email address" data-rule-required="true" data-rule-email="true" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address" autocapitalize="none" autocomplete="off">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="text" name="contact-number" id="contact-number" class="form-control" placeholder="Your contact number" data-rule-required="true" data-rule-number="true" data-msg-required="Please enter Your contact number" data-msg-number="Please enter valid contact Number">
-                                            </div>
-                                            <div class="form-group">
-                                                <textarea name="query" id="query" class="form-control" rows="5" cols="1" placeholder="Your query" data-rule-required="true" data-msg-required="Please enter Your query"></textarea>
-                                            </div>
-                                            <button type="button" class="btn btn-blue small d-block" onclick="">Send enquiry </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="box study-ct-campus p-5 mt-5">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="media">
-                                            <div class="icon-square d-flex mr-1 justify-content-center img-fill">
-                                                <img src="img/paper-plane.svg" alt="Paper Plane">
-                                            </div>
-                                            <div class="media-body align-self-center">
-                                                <p class="mb-0">Join our mailing list to stay up-to-date on upcoming courses and events.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 align-self-center">
-                                        <div class="row">
-                                            <div class="col-md-8 align-self-center">
-                                                <div class="mb-3 mb-md-0">
-                                                    <input type="email" class="form-control" placeholder="Your email" autocapitalize="none" autocomplete="off">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 align-self-center">
-                                                <div class="join-email-list">
-                                                    <button type="submit" class="btn btn-blue-outline small d-block">Submit</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main >
+        <!-- first section -->
+        <section class=" contacts-banner-wrap "> 
+            <div class="mb-5 ">
+                <h1 class="">Get in touch with us</h1>
+            </div>
+            <div class="banner-img mb-4">
+                <img src="./img/contact-banner.png" srcset="img/contact-banner@2x.png 2x, ./img/contact-banner@3x.png 3x" alt="Get in touch" class="img-fluid">
+            </div>
+            <div class="banner-text">
+                <p class="f-semibold f-18">Get pumped, get skilled</p>
+            </div>
+        </section>
+        <!-- second section -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="main-title">
+                            <h2 class="regular">The Maven Academy </h2>
                         </div>
-                    </section>
-        </main>
-
-    <!-- This is where I have my Footer container and all the elements inside it watch out -->
-
-        <footer class="">
-
-            <!-- Top Footer Elements -->
-            <div class="Upper-footer">
-                <div class="container">
+                        <div class="main-title-content">
+                            <p class="mb-3"><strong>Address:</strong></p>
+                            <p class="mb-4">Office F01A, Brookside Office Park, 11 Imam Haron Road, <br>Claremont, Western Cape, 7708</p>
+                            <p class="mb-3"><strong>Say hello:</strong></p>
+                            <p class="mb-4"><a href="mailto:hello@themavenacademy.one" class="blk-link">hello@themavenacademy.one</a></p>
+                            <p>Or call us directly on <a href="tel:+27 21 461 68 17" class="num-link"><strong>+27 21 461 68 17 </strong></a></p>
+                            <p>Schedule a call with one of our friendly course consultants and <br>we’ll get back to you within 24 hours.</p>
+                        </div>
+                        <div class="social-media">
+                            <ul class="d-flex ">
+                                <li>
+                                    <a href="https://web.facebook.com/The-Maven-Academy-108366197273447/?modal=admin_todo_tour" target="_blank" class="d-flex justify-content-center">
+                                        <img src="img/facebook.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/AcademyMaven" target="_blank" class="d-flex justify-content-center">
+                                        <img src="img/twitter.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/themavenacademysa/" target="_blank" class="d-flex justify-content-center">
+                                        <img src="img/instagram.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bg-light-blue inquiry-form mb-5">
+                            <div class="main-title-content mb-5">
+                                <p class="mb-3"><strong>Send us an enquiry </strong></p>
+                                <p>Schedule a call with one of our friendly course consultants and we’ll get back to you within 24 hours. </p>
+                            </div>
+                            <form id="frmcontactus" name="frmcontactus" method="post" class="form-error" >
+                                <div class="form-group">
+                                    <input type="text" name="fname" id="fname" class="form-control" placeholder="Your name" data-rule-required="true" data-msg-required="Please enter Your name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="surname" id="surname" class="form-control" placeholder="Your surname" data-rule-required="true" data-msg-required="Please enter Your surname">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Your email address" data-rule-required="true" data-rule-email="true" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address" autocapitalize="none" autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="contact-number" id="contact-number" class="form-control" placeholder="Your contact number" data-rule-required="true" data-rule-number="true" data-msg-required="Please enter Your contact number" data-msg-number="Please enter valid contact Number">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="query" id="query" class="form-control" rows="5" cols="1" placeholder="Your query" data-rule-required="true" data-msg-required="Please enter Your query"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-blue small d-block" onclick="">Send enquiry </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="box study-ct-campus p-5 mt-5">
                     <div class="row">
-                        <div class="col-lg-3 col-md-4">
-                            <div class="footer-title blue-text">
-                                General
-                            </div>
-                            <div class="">
-                                <ul style="list-style-type: none;">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="faq/">Faq</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4">
-                            <div class="footer-title blue-text">
-                                Why Us
-                            </div>
-                            <div class="">
-                                <ul style="list-style-type: none;">
-                                    <li><a href="why-us/">Why Study with us ?</a></li>
-                                    <li><a href="financial-aid/">Financial Aid - Study for Just R1</a></li>
-                                    <li><a href="internship-programme/">Internship - Work, Learn &amp; Earn</a></li>
-                                </ul>
+                        <div class="col-lg-6">
+                            <div class="media">
+                                <div class="icon-square d-flex mr-1 justify-content-center img-fill">
+                                    <img src="img/paper-plane.svg" alt="Paper Plane">
+                                </div>
+                                <div class="media-body align-self-center">
+                                    <p class="mb-0">Join our mailing list to stay up-to-date on upcoming courses and events.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4">
-                            <div class="footer-title blue-text">
-                                Developer Courses
-                            </div>
-                            <div class="">
-                                <ul style="list-style-type: none;">
-                                    <li><a href="courses/full-stack-web-developer/">Full Stack Web Developer</a></li>
-                                    <li><a href="courses/4-week-front-end-web-developer/">Front End Web Fundamentals</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-12">
-                            <div class="footer-title blue-text">
-                                Contact Us
-                            </div>
-                            <div class="">
-                                <ul style="list-style-type: none;">
-                                    <li>
-                                        <span><img src="img/phone-icon.svg" alt="Phone"></span>
-                                        <a href="" class=""><strong>+27 21 461 68 17</strong></a>
-                                    </li>
-                                    <li>
-                                        <span><img src="img/email-icon.svg" alt="Email"></span>
-                                        <p><a href="mailto:hello@themavenacademy.one" class="link">hello@themavenacademy.one</a></p>
-                                    </li>
-                                    <li class="mb-0">
-                                        <span><img src="img/location-icon.svg" alt="Location"></span>
-                                        <p>Office F01A, Brookside Office Park, 11 Imam Haron Road, Claremont, Western Cape, 7708</p>
-                                    </li>
-                                </ul>
+                        <div class="col-lg-6 align-self-center">
+                            <div class="row">
+                                <div class="col-md-8 align-self-center">
+                                    <div class="mb-3 mb-md-0">
+                                        <input type="email" class="form-control" placeholder="Your email" autocapitalize="none" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 align-self-center">
+                                    <div class="join-email-list">
+                                        <button type="submit" class="btn btn-blue-outline small d-block">Submit</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Lower Footer Elements -->
-
-            <div class="footer-bottom " style="
-            color: #ffffff;
-            background-color: #1f262d;
-            padding: 40px 0;">
-
-                <div class="container">
-                    <div class="row " >
-                        <div class="col-md-9 align-self-center">
-                            <div class="copyright">
-                                <p class="mb-0">All Rights Reserved, Maven Academy (Pty) Ltd. </p>
-                            </div>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer>
+        <!-- Top Footer Elements -->
+        <div class="Upper-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-title blue-text">
+                            General
                         </div>
-                        <div class="col-md-3 align-self-center">
-                            <div class="social-media">
-                                <ul class=" " >
-                                    <li>
-                                        <a href="https://web.facebook.com/The-Maven-Academy-108366197273447/?modal=admin_todo_tour" target="_blank" class="d-flex ">
-                                            <img src="img/facebook.svg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/AcademyMaven" target="_blank" class="d-flex">
-                                            <img src="img/twitter.svg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/themavenacademysa/" target="_blank" class="d-flex">
-                                            <img src="img/instagram.svg" alt="">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="">
+                            <ul style="list-style-type: none;">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="faq/">Faq</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-title blue-text">
+                            Why Us
+                        </div>
+                        <div class="">
+                            <ul style="list-style-type: none;">
+                                <li><a href="why-us/">Why Study with us ?</a></li>
+                                <li><a href="financial-aid/">Financial Aid - Study for Just R1</a></li>
+                                <li><a href="internship-programme/">Internship - Work, Learn &amp; Earn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="footer-title blue-text">
+                            Developer Courses
+                        </div>
+                        <div class="">
+                            <ul style="list-style-type: none;">
+                                <li><a href="./assets/course details/web-dev-detail.html">Full Stack Web Developer</a></li>
+                                <li><a href="./assets/course details/front-end-detail.html">Front End Web Fundamentals</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="footer-title blue-text">
+                            Contact Us
+                        </div>
+                        <div class="">
+                            <ul style="list-style-type: none;">
+                                <li>
+                                    <span><img src="./img/phone-icon.svg" alt="Phone"></span>
+                                    <a href="" class=""><strong>+27 21 461 68 17</strong></a>
+                                </li>
+                                <li>
+                                    <span><img src="./img/email-icon.svg" alt="Email"></span>
+                                    <p><a href="mailto:hello@themavenacademy.one" class="link">hello@themavenacademy.one</a></p>
+                                </li>
+                                <li class="mb-0">
+                                    <span><img src="./img/location-icon.svg" alt="Location"></span>
+                                    <p>Office F01A, Brookside Office Park, 11 Imam Haron Road, Claremont, Western Cape, 7708</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-
-        </footer>
-
-
+        </div>
+        <!-- Lower Footer Elements -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row " >
+                    <div class="col-md-9 align-self-center">
+                        <div class="copyright">
+                            <p class="mb-0">All Rights Reserved, Maven Academy (Pty) Ltd. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 align-self-center">
+                        <div class="social-media">
+                            <ul class=" " >
+                                <li>
+                                    <a href="https://web.facebook.com/The-Maven-Academy-108366197273447/?modal=admin_todo_tour" target="_blank" class="d-flex ">
+                                        <img src="./img/facebook.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/AcademyMaven" target="_blank" class="d-flex">
+                                        <img src="./img/twitter.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/themavenacademysa/" target="_blank" class="d-flex">
+                                        <img src="./img/instagram.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-    <script src="/js/scripts.js"></script>
+    <script src="./js/scripts.js"></script>
 
 </body>
 </html>

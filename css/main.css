@@ -37,6 +37,16 @@ h5 {
   margin: 55px 0px;
 }
 
+ul{
+  padding: 0;
+}
+a {
+  color: white;
+}
+.footer-title {
+  color: #459de9;
+}
+
 /* --- Header Styles ---- */
 .navbar {
   box-shadow: inset 0 -1px 0 0 #cfd8dd;
@@ -136,7 +146,8 @@ header a:hover{
   /* Media Query */
   @media all and (max-width: 767px){
     .Next-level-training,
-    .thank-you{
+    .thank-you,
+    h1, h2 {
       font-size: 34px;
     }
   }
@@ -185,31 +196,21 @@ header a:hover{
     text-align: center;
   }
 }
-/* THIRD SECTION STYLES - COURSES CAROUSEL STYLING */
 
+
+/* ---- Third Section ----- */
 .our-courses {
-  height: px;
   background-color: rgba(91, 157, 227, 0.08);
 }
-
+.item {
+/* width: 23.25rem; */
+height: 30.563rem;
+}
 .card {
-  width: 20rem;
-  border: none;
+border: none;
 }
 
- #add-to-inquiry {
-  width: 100%;
-  height: 40px;
-  border-radius: 22.5px;
-  border: solid 2px #60a0e3;
-  background-color: #ffffff;
-  color: #4a90e2;
-  text-decoration: none;
-}
-#add-to-inquiry:hover{
-  background-color: #4a90e2 ;
-  color: #ffffff;
-}
+
 
 /* COURSE OUTLINE PAGES' STYLING */
 
