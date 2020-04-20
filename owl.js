@@ -23,28 +23,28 @@ $('.nextBtn1').click(function() {
     owl1.trigger('next.owl.carousel');
 })
 
-// // Career Services Carousel
-// $('.careers').owlCarousel({
-//     loop:true,
-//     margin:10,
-//     nav:false,
-//     autoplay: true,
-//     responsive:{
-//         0:{
-//             items:1
-//         },
-//         600:{
-//             items:3
-//         },
-//         1000:{
-//             items:4
-//         }
-//     }
-// });
+// Career Services Carousel
+$('.careers').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+});
 
-// var owl2 = $('.careers');
-// owl2.owlCarousel();
-// // Go to the next item
-// $('.nextBtn2').click(function() {
-//     owl2.trigger('next.owl.carousel');
-// }) 
+var owl2 = $('.careers');
+owl2.owlCarousel();
+// Go to the next item
+$('.nextBtn2').click(function() {
+    owl2.trigger('next.owl.carousel');
+}) 

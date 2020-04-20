@@ -49,6 +49,9 @@ h5 {
   border: none;
   color: #ffffff;
 }
+.btn a:hover {
+  color: #ffffff;
+}
 
 ul{
   padding: 0;
@@ -285,6 +288,9 @@ li.sub-tabs-item {
   background-color: #4a90e2 ;
   color: #ffffff;
 }
+.item {
+  height: auto;
+}
 /* ----Contact Us Page ---- */
 
 
@@ -299,8 +305,6 @@ li.sub-tabs-item {
   justify-content: space-around;
   margin: 0 auto;
   margin-top: 50px;
-  /* display: flex;
-  flex-wrap: wrap; */
   padding-bottom: 100px;
 }
 
@@ -328,7 +332,6 @@ li.sub-tabs-item {
 
 .price {
   width: 15%;
-  /* border-bottom: 1px solid #d8d8d8; */
   display: flex;
   align-items: center;
 }
@@ -337,21 +340,16 @@ li.sub-tabs-item {
   width: 30%;
   display: flex;
   align-items: center;
-  /* border-bottom: 1px solid #d8d8d8; */
 }
 
 .total {
   width: 10%;
   display: flex;
   align-items: center;
-  /* border-bottom: 1px solid #d8d8d8; */
 }
 
 .course-plug-in {
   width: 45%;
-  /* display:flex;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #d8d8d8; */
 }
 
 .basketTotalContainer {
