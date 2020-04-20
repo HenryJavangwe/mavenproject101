@@ -109,25 +109,6 @@ header a:hover{
   border-radius: 50%;
 }
 
-/* media query navbar */
-@media all and (max-width: 768px){
-  .u-bline::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 4px;
-    background: #4a90e2;
-    transition: width .3s;
-  }
-  .u-bline:hover::after {
-    width: 100%;
-    margin-top: .5px;
-  }
-  header a:hover{
-    text-decoration: none;
-    color: #ffffff;
-  }
-}
 
 /* ---first section --- */
 .Banner-Wrapper,
