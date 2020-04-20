@@ -36,15 +36,34 @@ h5 {
 .buttons {
   margin: 55px 0px;
 }
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffffff;
+  border: solid 2px #4a90e2;
+  border-radius: 30px;
+  color: #4a90e2;
+}
+.btn:hover {
+  background-color: #459de9;
+  border: none;
+  color: #ffffff;
+}
 
 ul{
   padding: 0;
 }
-a {
-  color: white;
-}
 .footer-title {
   color: #459de9;
+}
+
+footer a {
+  color: #ffffff;
+}
+.footer-bottom {
+  color: #ffffff;
+  background-color: #1f262d;
+  padding: 40px 0;
 }
 
 /* --- Header Styles ---- */
@@ -254,7 +273,6 @@ li.sub-tabs-item {
 
 #find-out-more-career-services {
   width: 146px;
-  height: 40px;
   text-align: center;
   border-radius: 22.5px;
   border: solid 2px #60a0e3;
