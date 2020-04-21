@@ -1,6 +1,6 @@
 # mavenproject101
 
-## This is an Update of the Main Project submitted at the  Maven Academy
+## This is the Main Project submitted at the  Maven Academy after taking the Front-end Dev 4weeks Course.
 To clean up my code and add new updates from the feedback, I have deleted (where necessesary) complete sections of code and then rewrote it all spacing out consistantly and maintaining a good code quality.
 
 ### Front-End Web Development.
