@@ -83,3 +83,14 @@ let courses = [
         inCart  : 0
     },
 ];
+
+
+   // looping through the array of nodeList since querySelector all returns an array of all the instances where that selector is found.
+   for ( let i =0; i < addToCart.length; i++){
+    addToCart[i].addEventListener('click', ($event)=>{
+        $event.preventDefault();
+        console.log('Button clicked')
+        // cartNumbers(courses[i]);
+        // totalCost(courses[i]);
+    })
+ }
