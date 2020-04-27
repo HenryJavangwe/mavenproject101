@@ -150,7 +150,7 @@ for ( let i =0; i < addToCart.length; i++){
         }
     }
 
-    
+
 function displayCart(){
     let cartItems = localStorage.getItem("coursesInCart");
     cartItems = JSON.parse(cartItems);
