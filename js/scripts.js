@@ -61,9 +61,7 @@ window.onload = function() {
 // SHOPPING CART SCRIPTS
 
 console.log("running");
-
-const addToInquiry = document.querySelectorAll("#add-to-inquiry");
-
+let addToCart = document.querySelectorAll('#addToCart');
 let courses = [
     {
         name    : 'Become a Full Stack Web Developer ',
@@ -84,77 +82,73 @@ let courses = [
         inCart  : 0
     },
 ];
-
-// adding a click event listener to all the add-to-inquiry buttons.
-
-for (let i =0; i<addToInquiry.length; i++){
-    addToInquiry[i].addEventListener('click', ($event)=>{
-        $event.preventDefault();
-        cartNumbers(courses[i]);
-        totalCost(courses[i]);
-    })
-};
-// A function that will look at the local storage numbers and sat the number on the basket icon to be exactly as the number in the local storage- in order to keep the number from disappearing when the page is refreshed
-function onloadCartNumbers (){
-    let courseNumbers = localStorage.getItem('cartNumbers');
-    
+    // looping through the array of nodeList since querySelector all returns an array of all the instances where that selector is found.
+for ( let i =0; i < addToCart.length; i++){
+   addToCart[i].addEventListener('click', ($event)=>{
+       $event.preventDefault();
+       cartNumbers(courses[i]);
+       totalCost(courses[i]);
+   })
+}
+    // Created A function that will look at the local storage numbers and set the number on the basket icon to be exactly as the number in the local storage- in order to keep the number from disappearing when the page is refreshed.
+   function cartNumberOnLoad(){
+    let courseNumbers = localStorage.getItem('cartNumbers');//we are accessing the local storage and grabbing the contents.
     if(courseNumbers){
-        document.querySelector('.basket-value').textContent = courseNumbers;
+        document.querySelector('.basket span').textContent = courseNumbers;
     }
-};
-
-// A FUNCTION that will count the number of products added to the cart and update the number on the basket icon.
-
-function cartNumbers (course){
-    let courseNumbers = localStorage.getItem('cartNumbers');
-    courseNumbers = parseInt(courseNumbers);
-    if (courseNumbers) {
-        localStorage.setItem('cartNumbers', courseNumbers + 1);
-        document.querySelector('.basket-value').textContent = courseNumbers+ 1;
-    } else {
-        localStorage.setItem('cartNumbers',1);
-        document.querySelector('.basket-value').textContent = 1;
+   }
+    //Writing a function that will set localStorage numbers to the total number of times the buttons with eventListener are clicked.
+   function cartNumbers(course){
+       let courseNumbers = localStorage.getItem('cartNumbers');//we are accessing the local storage and grabbing the contents.
+       courseNumbers = parseInt(courseNumbers); //Numbers from the localStorage come as strings so we have to convert them to integers hence the parseInt;  
+       if(!courseNumbers){
+        localStorage.setItem('cartNumbers', 1);
+        document.querySelector('.basket span').textContent =1;
+       } else{
+        localStorage.setItem('cartNumbers', courseNumbers+ 1);
+        document.querySelector('.basket span').textContent = courseNumbers+ 1;
+       }
+       setItems(course);
     }
-    setItems(course);
-};
 
-
-function setItems (course){
-    let cartItems = localStorage.getItem('coursesInCart');
-    cartItems = JSON.parse(cartItems);
-    // console.log('my cart items are', cartItems);
-    if (cartItems != null){
+    function setItems (course){
+        let cartItems = localStorage.getItem('coursesInCart');
+        cartItems = JSON.parse(cartItems);
         
-        if(cartItems[course.tag] == undefined){
-            cartItems = {
-                ...cartItems,
+        if (cartItems != null){ 
+            if(cartItems[course.tag] == undefined){
+                cartItems = {
+                    ...cartItems,
+                    [course.tag]: course
+                }
+            }
+            cartItems[course.tag].inCart += 1; 
+        }else {
+            course.inCart =1;
+            cartItems ={
                 [course.tag]: course
             }
+        } 
+        localStorage.setItem("coursesInCart", JSON.stringify(cartItems));
+        console.log('my cart items are', cartItems);
+    };
+
+    // creating a function that will calc the total cost of the products/ courses inside the cart
+
+    function totalCost(course){
+        // console.log("The course price is ", course.price);
+        let cartCost = localStorage.getItem("totalCost");
+        
+        console.log("my cartCost is", cartCost );
+        console.log(typeof cartCost);
+        
+        if(cartCost != null){
+            cartCost=parseInt(cartCost);
+            localStorage.setItem("totalCost", cartCost + course.price);
+        }else {
+            localStorage.setItem("totalCost", course.price );
         }
-        cartItems[course.tag].inCart += 1; 
-    }else {
-        course.inCart =1;
-        cartItems ={
-            [course.tag]: course
-        }
-    } 
-    localStorage.setItem("coursesInCart", JSON.stringify(cartItems));
-};
-
-function totalCost(course){
-// console.log("The course price is ", course.price);
-let cartCost = localStorage.getItem("totalCost");
-
-console.log("my cartCost is", cartCost );
-console.log(typeof cartCost);
-
-if(cartCost != null){
-    cartCost=parseInt(cartCost);
-    localStorage.setItem("totalCost", cartCost + course.price);
-}else {
-    localStorage.setItem("totalCost", course.price );
-}
-}
+    }
 
 function displayCart(){
     let cartItems = localStorage.getItem("coursesInCart");
@@ -200,6 +194,6 @@ function displayCart(){
 
     }
 }
-// calling the onload function so that it runs.
-onloadCartNumbers ();
+// this function is not called above sp we call it here at the bottom, otherwise nothing will be executed when the page is refreshed on loaded.
+cartNumberOnLoad();
 displayCart();
