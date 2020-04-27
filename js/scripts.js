@@ -90,7 +90,43 @@ let courses = [
     addToCart[i].addEventListener('click', ($event)=>{
         $event.preventDefault();
         console.log('Button clicked')
-        // cartNumbers(courses[i]);
+        cartNumbers(courses[i]);
         // totalCost(courses[i]);
     })
  }
+
+  //Writing a function that will set localStorage numbers to the total number of times the buttons with eventListener are clicked.
+  function cartNumbers(course){
+    let courseNumbers = localStorage.getItem('cartNumbers');//we are accessing the local storage and grabbing the contents.
+    courseNumbers = parseInt(courseNumbers); //Numbers from the localStorage come as strings so we have to convert them to integers hence the parseInt;  
+    if(!courseNumbers){
+     localStorage.setItem('cartNumbers', 1);
+     document.querySelector('.basket span').textContent =1;
+    } else{
+     localStorage.setItem('cartNumbers', courseNumbers+ 1);
+     document.querySelector('.basket span').textContent = courseNumbers+ 1;
+    }
+    setItems(course);
+ }
+
+ function setItems (course){
+     let cartItems = localStorage.getItem('coursesInCart');
+     cartItems = JSON.parse(cartItems);
+     
+     if (cartItems != null){ 
+         if(cartItems[course.tag] == undefined){
+             cartItems = {
+                 ...cartItems,
+                 [course.tag]: course
+             }
+         }
+         cartItems[course.tag].inCart += 1; 
+     }else {
+         course.inCart =1;
+         cartItems ={
+             [course.tag]: course
+         }
+     } 
+     localStorage.setItem("coursesInCart", JSON.stringify(cartItems));
+     console.log('my cart items are', cartItems);
+ };
