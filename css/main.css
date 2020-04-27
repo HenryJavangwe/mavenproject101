@@ -272,6 +272,16 @@ li.sub-tabs-item {
 .item {
   height: auto;
 }
+
+/* -----Fifth Section  */
+@media all and (max-width: 767px){
+  .students {
+    margin: 30px 20px 0 5px;
+    contain: content;
+    overflow: hidden;
+  }
+}
+
 /* ----Contact Us Page ---- */
 
 

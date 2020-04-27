@@ -3,6 +3,8 @@ $('.carousel-courses').owlCarousel({
     margin:10,
     nav:false,
     autoplay: true,
+    autoplayHoverPause:true,
+    autoplayTimeout:3000,
     responsive:{
         0:{
             items:1
