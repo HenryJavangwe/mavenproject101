@@ -91,7 +91,7 @@ for ( let i =0; i < addToCart.length; i++){
         $event.preventDefault();
         console.log('Button clicked')
         cartNumbers(courses[i]);
-        // totalCost(courses[i]);
+        totalCost(courses[i]);
     })
 }
 
@@ -140,6 +140,23 @@ function setItems (course){
     localStorage.setItem("coursesInCart", JSON.stringify(cartItems));
     console.log('my cart items are', cartItems);
 };
+
+ // creating a function that will calc the total cost of the products/ courses inside the cart
+
+ function totalCost(course){
+    // console.log("The course price is ", course.price);
+    let cartCost = localStorage.getItem("totalCost");
+    
+    console.log("my cartCost is", cartCost );
+    console.log(typeof cartCost);
+    
+    if(cartCost != null){
+        cartCost=parseInt(cartCost);
+        localStorage.setItem("totalCost", cartCost + course.price);
+    }else {
+        localStorage.setItem("totalCost", course.price );
+    }
+}
 
 // // this function is not called above sp we call it here at the bottom, otherwise nothing will be executed when the page is refreshed on loaded.
 cartNumberOnLoad();
