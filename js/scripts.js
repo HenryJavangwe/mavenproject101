@@ -158,5 +158,43 @@ function setItems (course){
     }
 }
 
+// This function will look at our local storage, grab the coursesInCart and then dynamically create a div in the cart.html, inside the course-plug-in section, where it will populate the space with the contents of the coursesInCart var.  
+
+function displayCart (){
+    let cartItems = localStorage.getItem('coursesInCart');
+    cartItems = JSON.parse(cartItems);
+    console.log("the display cart items are",cartItems);
+    let courseContainer = document.querySelector('.course-plug-in')
+
+    if(cartItems && courseContainer ){
+        console.log('running');
+        courseContainer.innerHTML = "";// we're making this container empty if there was anything in there when we load the page the first time.
+        Object.values(cartItems).map( item =>{ //we'll use back-ticks to inject variables inside the strings.
+            courseContainer.innerHTML += `
+            </div class = "product ">
+                <div class="cart-layouts">
+                    <div class="tag-name">
+                        <span><a href="#" id=""><img src="./img/icons8-delete.svg" alt="" class="delete-icon"></a></span>
+                        <span><img src="./img/${item.tag}.png" class="dynamic-img"></span>
+                        <span class="name-span"> ${item.name}</span>
+                    </div>
+                    <div class="price">
+                        <span > R ${item.price}</span>
+                    </div>
+                    <div class="quantity">
+                        <span><a href="#" id=""><img class="arrow-low" src="https://img.icons8.com/flat_round/64/000000/arrow-left.png"/></a></span>
+                        <span class="">${item.inCart}</span>
+                        <span ><a href="#" id=""><img class="arrow-up" src="https://img.icons8.com/flat_round/64/000000/arrow-right.png"/></a></span>
+                    </div>
+                    <div class="total"> R ${item.inCart * item.price},00 </div>
+                </div>
+            </div>
+            `
+        });
+        
+    }
+};
+
 // // this function is not called above sp we call it here at the bottom, otherwise nothing will be executed when the page is refreshed on loaded.
 cartNumberOnLoad();
+displayCart();
