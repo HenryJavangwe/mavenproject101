@@ -289,10 +289,59 @@ li.sub-tabs-item {
   border-radius: 22.5px;
 }
 
+
+
+
 /* -------CART PAGE------- */
+.cart-main-section {
+  height: 760px;
+}
+
+div span .dynamic-img {
+  width: 180px;
+  height: 180px;
+}
+
+div span .delete-icon,
+div span .arrow-low, 
+div span .arrow-up {
+  width: 25px;
+  height: 25px;
+}
+
+.cart-layouts {
+  display: flex;
+}
+.cart-layouts div {
+  line-height: 200px;
+  height: 200px;
+  vertical-align: middle;
+  border-bottom: 3px solid #d8d8d8;
+}
+
+.course-title,
+div.tag-name {
+  width: 45%;
+}
+
+
+h5.price,
+div.price {
+  width: 20%;
+  justify-content: center;
+}
+h5.quantity,
+div.quantity{
+  width: 20%;
+}
+
+h5.total,
+div.total {
+  width: 15%;
+}
+
 
 .courses-container {
-  max-width: 650px;
   justify-content: space-around;
   margin: 0 auto;
   margin-top: 50px;
@@ -309,34 +358,10 @@ li.sub-tabs-item {
 
 .courses-header {
   width: 100%;
-  max-width: 650px;
   display: flex;
   justify-content: flex-start;
   border-bottom: 3px solid #d8d8d8;
   margin: 0 auto;
-}
-
-.course-title {
-  width: 45%;
-
-}
-
-.price {
-  width: 15%;
-  display: flex;
-  align-items: center;
-}
-
-.quantity {
-  width: 30%;
-  display: flex;
-  align-items: center;
-}
-
-.total {
-  width: 10%;
-  display: flex;
-  align-items: center;
 }
 
 .course-plug-in {
