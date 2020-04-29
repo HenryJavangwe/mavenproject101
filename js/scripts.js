@@ -191,8 +191,8 @@ function displayCart (){
                 </div>
             </div>
             `
+            
         });
-
         courseContainer.innerHTML += `
         <div class="basketTotalContainer justify-content-end  ">
             <h4 class="basketTotalTitle"> Cart Total </h4>
