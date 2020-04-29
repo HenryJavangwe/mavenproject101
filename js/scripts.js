@@ -164,7 +164,8 @@ function displayCart (){
     let cartItems = localStorage.getItem('coursesInCart');
     cartItems = JSON.parse(cartItems);
     console.log("the display cart items are",cartItems);
-    let courseContainer = document.querySelector('.course-plug-in')
+    let courseContainer = document.querySelector('.course-plug-in');
+    let cartCost = localStorage.getItem("totalCost");
 
     if(cartItems && courseContainer ){
         console.log('running');
@@ -191,6 +192,13 @@ function displayCart (){
             </div>
             `
         });
+
+        courseContainer.innerHTML += `
+        <div class="basketTotalContainer justify-content-end  ">
+            <h4 class="basketTotalTitle"> Cart Total </h4>
+            <span class="basketTotal"> R ${cartCost}</span>
+        </div>
+        `
         
     }
 };
