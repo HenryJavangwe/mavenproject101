@@ -183,9 +183,9 @@ function displayCart (){
                         <span > R ${item.price}</span>
                     </div>
                     <div class="quantity">
-                        <span><a href="#" id=""><img class="arrow-low" src="https://img.icons8.com/flat_round/64/000000/arrow-left.png"/></a></span>
-                        <span class="">${item.inCart}</span>
-                        <span ><a href="#" id=""><img class="arrow-up" src="https://img.icons8.com/flat_round/64/000000/arrow-right.png"/></a></span>
+                        <div class="cart-quantity cart-column">
+                            <input class="cart-quantity-input" type="number" value="${item.inCart}">
+                        </div>
                     </div>
                     <div class="total"> R ${item.inCart * item.price},00 </div>
                 </div>
@@ -206,3 +206,11 @@ function displayCart (){
 // // this function is not called above sp we call it here at the bottom, otherwise nothing will be executed when the page is refreshed on loaded.
 cartNumberOnLoad();
 displayCart();
+
+
+
+{/* <div class="quantity">
+<span><a href="#" id=""><img class="arrow-low" src="https://img.icons8.com/flat_round/64/000000/arrow-left.png"/></a></span>
+<span class="">${item.inCart}</span>
+<span ><a href="#" id=""><img class="arrow-up" src="https://img.icons8.com/flat_round/64/000000/arrow-right.png"/></a></span>
+</div> */}

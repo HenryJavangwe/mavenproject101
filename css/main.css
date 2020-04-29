@@ -334,6 +334,18 @@ h5.quantity,
 div.quantity{
   width: 20%;
 }
+.cart-quantity-input {
+  height: 50px;
+  width: 50%;
+  border-radius: 22.5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  color: #333;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
 
 h5.total,
 div.total {
